@@ -20,7 +20,7 @@ for i in range(31962):
     tweet =re.sub('[^a-zA-Z#]', ' ',dataset['tweet'][i]) #emojies
     tweet=tweet.lower()#this will lower the text of each tweeet
     tweet=tweet.split()#changing tweets in list
-    tweet=[ps.stem(token) for token in tweet if not token in stopwords.words('english')]#token is the smallest no.so wo saare words jo stopwords me nhi hai
+    tweet=[ps.stem(token) for token in tweet if not token in stopwords.words('english')]#token is the smallest no.
     tweet=' '.join(tweet)
     processed_tweet.append(tweet)  #here all the tweets that will be filtered will enter here          
 
